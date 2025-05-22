@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Escolher Dificuldade</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="dificuldades.css">
+</head>
+<body>
+    <div class="difficulty-container">
+        <h1>Escolha a Dificuldade:</h1>
+        <div class="difficulty-buttons">
+            <button onclick="setDifficulty('facil')">Fácil</button>
+            <button onclick="setDifficulty('media')">Média</button>
+            <button onclick="setDifficulty('dificil')">Difícil</button>
+        </div>
+    </div>
+
+    <script>
+        function setDifficulty(level) {
+            localStorage.setItem('dificuldade', level);
+            window.location.href = 'game.html';
+        }
+    </script>
+</body>
+</html>

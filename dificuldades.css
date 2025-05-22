@@ -1,0 +1,36 @@
+.difficulty-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('bg.avif');
+            background-size: cover;
+        }
+
+        .difficulty-container h1 {
+            font-size: 2em;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .difficulty-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .difficulty-buttons button {
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .difficulty-buttons button:hover {
+            background-color: #0056b3;
+        }
